@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Nestle Health Science</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="active" id="home_button">
+                <a data-toggle="pill" href="#home"><img class="shadow" src="img/nav/Home button.png" /></a>
+            </li>
+            <li>
+                <a data-toggle="pill" href="#healthcare_resource"><img class="shadow" src="img/nav/Healthcare TAB.png"></a>
+            </li>
+            <li>
+                <a data-toggle="pill" href="#product_guide"><img class="shadow" src="img/nav/Product Guide TAB.png" /></a>
+            </li>
+            <li id="sublevel_button">
+                <a data-toggle="pill" href="#oral_supplements"><img class="shadow" src="img/nav/Oral Supplements TAB.png" /></a>
+            </li>
+            <li id="sublevel_button">
+                <a data-toggle="pill" href="#sustagen"><img class="shadow" src="img/nav/Sustagen TAB.png" /></a>
+            </li>
+            <li id="sublevel_button">
+                <a data-toggle="pill" href="#tube_feeds"><img class="shadow" src="img/nav/Tube Feeds TAB.png" /></a>
+            </li>
+            <li id="sublevel_button">
+                <a data-toggle="pill" href="#paediatric_allergy"><img class="shadow" src="img/nav/Paediatric Allergy TAB.png" /></a>
+            </li>
+            <li id="sublevel_button">
+                <a data-toggle="pill" href="#paediatric_specialised"><img class="shadow" src="img/nav/Paediatric Specialised TAB.png" /></a>
+            </li>
+            <li id="sublevel_button">
+                <a data-toggle="pill" href="#optifast_vlcd"><img class="shadow" src="img/nav/Optifast TAB.png" /></a>
+            </li>
+            <li id="sublevel_button">
+                <a data-toggle="pill" href="#dsyphagia"><img class="shadow" src="img/nav/Dysphagia TAB.png" /></a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <img id="right_img" src="img/home.png" />
+                <div class="home-left">
+                    <img src="img/Nestle logo.png" />
+                    <h1>POD<br/>Touch screen Homepage</h1>
+                </div>
+            </div>
+            <div id="healthcare_resource" class="tab-pane fade">
+                <h3>Healtcare Guide</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <!--<div id="menu1" class="tab-pane fade">
+                <h3>Menu 1</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <h3>Menu 3</h3>
+                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>->
+        </div>
+    </div>-->
+            <img class="nestle_logo" src="img/Nestle logo.png" />
+            <!-- Put your page content here! -->
+            <!-- jQuery -->
+            <script src="js/jquery.js"></script>
+            <!-- Bootstrap Core JavaScript -->
+            <script src="js/bootstrap.min.js"></script>
+            <script type="text/javascript">
+            $(document).ready(function() {
+                var num = $('.nav>li').length; /* or suitably high number depending on your layout */
+                $('.nav>li').each(function(i, item) {
+                    $(item).css('z-index', num - i);
+                });
+                $('img').bind('contextmenu', function(e) {
+                    return false;
+                });
+                $('img').on('dragstart', function(event) {
+                    event.preventDefault();
+                });
+                $('.nav a').click(function() {
+                    if ($(this).attr('href') == "#home") {
+                        $('#home_button').css("opacity", "0");
+                        $('li#sublevel_button').css("opacity", "0");
+
+                    } else {
+                        $('#home_button').css("opacity", "1");
+                        if ($(this).attr('href') != "#healthcare_resource") {
+                            $('li#sublevel_button').css("opacity", "1");
+                        } else {
+                            $('li#sublevel_button').css("opacity", "0");
+                        }
+                    }
+                })
+            });
+            </script>
+</body>
+
+</html>

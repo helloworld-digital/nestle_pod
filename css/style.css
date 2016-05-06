@@ -1,0 +1,147 @@
+/*!
+ * Start Bootstrap - Full HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato-Black;
+    src: url(../fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: Lato-Heavy;
+    src: url(../fonts/Lato-Heavy.ttf);
+}
+
+.shadow{
+	 -webkit-filter: drop-shadow(0px 1px 5px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+html{
+	overflow: hidden;
+}
+
+body {
+    background-color: transparent;
+    font-family: Lato-Regular;
+}
+
+h1 {
+    font-family: Lato-Black;
+    color: #00aad2;
+}
+
+.container {
+    width: 1920px;
+    padding-left: 35px;
+}
+
+.full {
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.nestle_logo {
+    position: absolute;
+    right: 35px;
+    bottom: 35px;
+    width: 238px;
+    z-index: -1;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    background-color: transparent;
+}
+
+.nav>li>a {
+    padding: 0px;
+
+}
+
+.nav>li:nth-child(n+2)>a>img {
+    margin-top: -80px;
+    -webkit-transition: margin-top 0.5s; 
+}
+
+.nav>li:nth-child(3)>a>img {
+    margin-top: -105px;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: transparent;
+
+}
+
+.nav>li:nth-child(n+2).active>a>img,
+.nav>li:nth-child(n+2)>a:focus img,
+.nav>li:nth-child(n+2)>a:hover img {
+    margin-top: -65px;
+}
+
+.nav>li:nth-child(3).active>a>img,
+.nav>li:nth-child(3)>a:focus img,
+.nav>li:nth-child(3)>a:hover img {
+    margin-top: -90px;
+}
+
+.nav-pills>li:first-child {
+    padding-top: 11px;
+    opacity: 0;
+    padding-bottom: 15px;
+}
+
+.nav-pills>li:nth-child(3) {
+    margin-left: -45px;
+}
+
+.nav-pills>li:nth-child(n+4) {
+    margin-left: -70px;
+}
+
+.active{
+	z-index: 20 !important;
+}
+
+
+#sublevel_button {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+}
+
+#home #right_img {
+    position: absolute;
+    right: -262px;
+    top: 0;
+    height: 100%;
+}
+
+.home-left{
+	padding-left: 77px;
+	padding-top: 197px;
+	width: 584px;
+}
+
+
+.home-left h1{
+	padding-left: 122px;
+	font-size: 65px;
+	margin-top: 80px;
+}
