@@ -22,15 +22,15 @@
     src: url(../fonts/Lato-Heavy.ttf);
 }
 
-.shadow{
-	 -webkit-filter: drop-shadow(0px 1px 5px rgba(0,0,0,0.5));
+.shadow {
+    -webkit-filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.5));
     filter: url(#drop-shadow);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
 
-html{
-	overflow: hidden;
+html {
+    overflow: hidden;
 }
 
 body {
@@ -41,6 +41,20 @@ body {
 h1 {
     font-family: Lato-Black;
     color: #00aad2;
+}
+
+#flipbook * {
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
+    box-sizing: initial;
+}
+
+#flipbook{
+    margin-top: 100px !important;
+}
+
+#flipbook img{
+    width: 100%;
 }
 
 .container {
@@ -72,12 +86,11 @@ h1 {
 
 .nav>li>a {
     padding: 0px;
-
 }
 
 .nav>li:nth-child(n+2)>a>img {
     margin-top: -80px;
-    -webkit-transition: margin-top 0.5s; 
+    -webkit-transition: margin-top 0.5s;
 }
 
 .nav>li:nth-child(3)>a>img {
@@ -87,7 +100,6 @@ h1 {
 .nav>li>a:focus,
 .nav>li>a:hover {
     background-color: transparent;
-
 }
 
 .nav>li:nth-child(n+2).active>a>img,
@@ -116,10 +128,9 @@ h1 {
     margin-left: -70px;
 }
 
-.active{
-	z-index: 20 !important;
+.active {
+    z-index: 20 !important;
 }
-
 
 #sublevel_button {
     opacity: 0;
@@ -133,15 +144,100 @@ h1 {
     height: 100%;
 }
 
-.home-left{
-	padding-left: 77px;
-	padding-top: 197px;
-	width: 584px;
+.home-left {
+    padding-left: 77px;
+    padding-top: 197px;
+    width: 584px;
 }
 
+.home-left h1 {
+    padding-left: 122px;
+    font-size: 65px;
+    margin-top: 80px;
+}
 
-.home-left h1{
-	padding-left: 122px;
-	font-size: 65px;
-	margin-top: 80px;
+.healthcare_resource {
+    margin-top: 87px;
+    padding-left: 63px;
+    padding-right: 94px;
+}
+
+.healthcare_resource .col-md-4 {
+    padding-right: 26px;
+    padding-left: 26px;
+    background: url('../img/healthcare/Dotted Line.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    min-height: 600px;
+}
+
+.healthcare_resource .col-md-4:last-child {
+    background: none;
+}
+
+.healthcare_resource h2 {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    width: 524px;
+    color: white;
+    padding: 11px;
+    padding-left: 56px;
+    line-height: 20px;
+    font-size: 22px;
+}
+
+.healthcare_resource ul {
+    padding-left: 0px;
+}
+
+.healthcare_resource li {
+    list-style: none;
+    font-size: 23px;
+    line-height: 45px;
+}
+
+.healthcare_resource a,
+.healthcare_resource a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.healthcare_resource li:before {
+    display: inline-block;
+    content: "";
+    width: 35px;
+    height: 35px;
+    background: url('../img/healthcare/PDF icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+#peach {
+    background: url('../img/healthcare/HealthCare page_Peach Bar.png');
+}
+
+#sustagen_blue {
+    background: url('../img/healthcare/HealthCare page_Sustagen Blue Bar.png');
+}
+
+#purple {
+    background: url('../img/healthcare/HealthCare page_Purp Bar.png');
+}
+
+#yellow {
+    background: url('../img/healthcare/HealthCare page_Yellow Bar.png');
+}
+
+#teal {
+    background: url('../img/healthcare/HealthCare page_Teal Bar.png');
+}
+
+#green {
+    background: url('../img/healthcare/HealthCare page_Green Bar.png');
+}
+
+#blue {
+    background: url('../img/healthcare/HealthCare page_Blue Bar.png');
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="full" lang="en">
-<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
 
 <head>
     <meta charset="utf-8">
@@ -19,6 +18,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href="http://fancyapps.com/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+    <link href="booklet/jquery.booklet.latest.css" type="text/css" rel="stylesheet" media="screen, projection, tv" />
 </head>
 
 <body>
@@ -64,57 +65,134 @@
                 </div>
             </div>
             <div id="healthcare_resource" class="tab-pane fade">
-                <h3>Healtcare Guide</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="row healthcare_resource">
+                    <div class="col-md-4">
+                        <h2 id="peach">ORAL SUPPLEMENTS</h2>
+                        <ul>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/example.pdf">Nestlé Nutrition Treatment Protocol</a>
+                            </li>
+                            <li>Med Round Resource 2.0 A4</li>
+                            <li>Protein And The Older Adult Update</li>
+                            <li>Hospital 2 Cal Detail Aid</li>
+                        </ul>
+                        <h2 id="sustagen_blue">SUSTAGEN®</h2>
+                        <ul>
+                            <li>Sustagen® Clinical Bigfoot Trade Presenter</li>
+                            <li>Sustagen® Neutral Bulk Mixing Instructions</li>
+                            <li>Sustagen® Neutral Bulk Mixing Instructions</li>
+                            <li>Sustagen® Product Range Brochure</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 id="purple">Tube Feeds</h2>
+                        <ul>
+                            <li>Tube Feed Detail Aid 2016</li>
+                            <li>Medtronic Nestle HCP Brochure</li>
+                            <li>ENFit InService PPT - March 2016</li>
+                            <li>Presentation Nestle Medtronic KinCare</li>
+                        </ul>
+                        <h2 id="yellow">Paediatric</h2>
+                        <ul>
+                            <li>Paed Product Range detail aid</li>
+                            <li>CMPA – Introduction of Solids</li>
+                            <li>Sad Toy Allergy range tri fold out detailer</li>
+                            <li>Paed Product Range iPad presentation</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 id="teal">Optifast® VLCD™</h2>
+                        <ul>
+                            <li>Clinical treatment protocol</li>
+                        </ul>
+                        <h2 id="green">Dysphagia</h2>
+                        <ul>
+                            <li>ThickenUp Clear A5 Brochure Clinical Key Features and Benefits</li>
+                            <li>ThickenUp A4 Detail Aid</li>
+                            <li>ThickenUp Hydration Product Overview</li>
+                            <li>TUC A4 combined prep guide</li>
+                        </ul>
+                        <h2 id="blue">NCare</h2>
+                        <ul>
+                            <li>NHS NCare Presentation</li>
+                            <li>Representative Contact Details</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <!--<div id="menu1" class="tab-pane fade">
-                <h3>Menu 1</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div id="product_guide" class="tab-pane fade">
+                <div id="flipbook">
+                    <div><img src="product_guide/page1.jpg"/></div>
+                    <div><img src="product_guide/page2.jpg"/></div>
+                    <div><img src="product_guide/page3.jpg"/></div>
+                </div>
             </div>
-            <div id="menu2" class="tab-pane fade">
-                <h3>Menu 2</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-            </div>
-            <div id="menu3" class="tab-pane fade">
-                <h3>Menu 3</h3>
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            </div>->
         </div>
-    </div>-->
-            <img class="nestle_logo" src="img/Nestle logo.png" />
-            <!-- Put your page content here! -->
-            <!-- jQuery -->
-            <script src="js/jquery.js"></script>
-            <!-- Bootstrap Core JavaScript -->
-            <script src="js/bootstrap.min.js"></script>
-            <script type="text/javascript">
-            $(document).ready(function() {
-                var num = $('.nav>li').length; /* or suitably high number depending on your layout */
-                $('.nav>li').each(function(i, item) {
-                    $(item).css('z-index', num - i);
-                });
-                $('img').bind('contextmenu', function(e) {
-                    return false;
-                });
-                $('img').on('dragstart', function(event) {
-                    event.preventDefault();
-                });
-                $('.nav a').click(function() {
-                    if ($(this).attr('href') == "#home") {
-                        $('#home_button').css("opacity", "0");
-                        $('li#sublevel_button').css("opacity", "0");
+      
+        <img class="nestle_logo" src="img/Nestle logo.png" />
+        <!-- Put your page content here! -->
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="booklet/jquery-2.1.0.min.js"><\/script>')
+        </script>
+        <!-- jQuery UI (optional) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script>
+        window.jQuery.ui || document.write('<script src="booklet/jquery-ui-1.10.4.custom.min.js"><\/script>')
+        </script>
+        <!-- Booklet -->
+        <script src="booklet/jquery.easing.1.3.js"></script>
+        <script src="booklet/jquery.booklet.latest.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="http://fancyapps.com/fancybox/source/jquery.fancybox.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            var num = $('.nav>li').length; /* or suitably high number depending on your layout */
+            $('#flipbook').booklet({
+                width: 1740,
+                height: 650,
+                closed: true,
+                autoCenter: true,
+                manual: false,
+                overlays: true,
+                hovers: true,
+                pagePadding: 0
 
-                    } else {
-                        $('#home_button').css("opacity", "1");
-                        if ($(this).attr('href') != "#healthcare_resource") {
-                            $('li#sublevel_button').css("opacity", "1");
-                        } else {
-                            $('li#sublevel_button').css("opacity", "0");
-                        }
-                    }
-                })
             });
-            </script>
+            $(".healthcare_resource a").fancybox({
+                openEffect: 'elastic',
+                closeEffect: 'elastic',
+                iframe: {
+                    preload: false
+                }
+            });
+            $('.nav>li').each(function(i, item) {
+                $(item).css('z-index', num - i);
+            });
+            $('img').bind('contextmenu', function(e) {
+                return false;
+            });
+            $('img').on('dragstart', function(event) {
+                event.preventDefault();
+            });
+            $('.nav a').click(function() {
+                if ($(this).attr('href') == "#home") {
+                    $('#home_button').css("opacity", "0");
+                    $('li#sublevel_button').css("opacity", "0");
+
+                } else {
+                    $('#home_button').css("opacity", "1");
+                    if ($(this).attr('href') != "#healthcare_resource") {
+                        $('li#sublevel_button').css("opacity", "1");
+                    } else {
+                        $('li#sublevel_button').css("opacity", "0");
+                    }
+                }
+            })
+        });
+        </script>
 </body>
 
 </html>
