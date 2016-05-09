@@ -8,9 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Nestle Health Science</title>
-    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -322,94 +320,20 @@
             </div>
         </div>
         <img class="nestle_logo" src="img/Nestle logo.png" />
-        <!-- Put your page content here! -->
-        <!-- jQuery -->
-        <script src="js/jquery-2.1.0.min.js"></script>
-        <script>
-        window.jQuery || document.write('<script src="booklet/jquery-2.1.0.min.js"><\/script>')
-        </script>
-        <!-- jQuery UI (optional) -->
-        <script src="js/jquery-ui-1.10.4.min.js"></script>
-        <script>
-        window.jQuery.ui || document.write('<script src="booklet/jquery-ui-1.10.4.custom.min.js"><\/script>')
-        </script>
-        <!-- Booklet -->
-        <script src="booklet/jquery.easing.1.3.js"></script>
-        <script src="booklet/jquery.booklet.latest.min.js"></script>
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.fancybox.js"></script>
-        <script type="text/javascript">
-        $(document).ready(function() {
-            var num = $('.nav>li').length; /* or suitably high number depending on your layout */
-            $('#flipbook').booklet({
-                width: 1740,
-                height: 650,
-                closed: true,
-                autoCenter: true,
-                pagePadding: 0,
-                arrows: true,
-                hover: false,
-                pageNumbers: false,
-                change: function(event, data) {
-                    switch (data.index) {
-
-                        case 0:
-                            $('#page-1').tab('show');
-                            $('#firstpage_caption ').show();
-                            $('#generic_caption').hide();
-                            break;
-
-                        default:
-                            $('#page-'+data.index).tab('show');
-                            $('#firstpage_caption ').hide();
-                            $('#generic_caption').show();
-                            break;
-                    }
-
-                }
-            });
-            $(".healthcare_resource a").fancybox({
-                openEffect: 'elastic',
-                closeEffect: 'elastic',
-                height: 824,
-                iframe: {
-                    preload: false
-                },
-            });
-            $('.nav>li').each(function(i, item) {
-                $(item).css('z-index', num - i);
-            });
-            $('img').bind('contextmenu', function(e) {
-                return false;
-            });
-            $('img').on('dragstart', function(event) {
-                event.preventDefault();
-            });
-            $('.nav a').click(function(e) {
-                if ($(this).attr('href') == "#home") {
-                    $(".full").css("background", "white");
-                    $('#home_button').css("opacity", "0");
-                    $('li#sublevel_button').css("opacity", "0");
-
-                } else {
-                    $('#home_button').css("opacity", "1");
-                    if ($(this).attr('href') != "#healthcare_resource") {
-                        $(".full").css("background", "url('img/background.jpg') no-repeat center center fixed");
-                        $('li#sublevel_button').css("opacity", "1");
-                        e.preventDefault();
-                        $('#flipbook').booklet("gotopage", $(this).data('page'));
-                    } else {
-                        $('li#sublevel_button').css("opacity", "0");
-                        $(".full").css("background", "white");
-
-                    }
-                }
-            })
-
-
-        });
-        </script>
+    </div>
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="booklet/jquery-2.1.0.min.js"><\/script>')
+    </script>
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script>
+    window.jQuery.ui || document.write('<script src="booklet/jquery-ui-1.10.4.custom.min.js"><\/script>')
+    </script>
+    <script src="booklet/jquery.easing.1.3.js"></script>
+    <script src="booklet/jquery.booklet.latest.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
