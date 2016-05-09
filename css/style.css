@@ -49,12 +49,12 @@ h1 {
     box-sizing: initial;
 }
 
-#flipbook{
+#flipbook {
     margin-top: 100px !important;
 }
 
-#flipbook img{
-    width: 100%;
+#flipbook img {
+    height: 100%;
 }
 
 .container {
@@ -63,7 +63,7 @@ h1 {
 }
 
 .full {
-    background: url('../img/background.jpg') no-repeat center center fixed;
+    background: white;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -72,8 +72,8 @@ h1 {
 
 .nestle_logo {
     position: absolute;
-    right: 35px;
-    bottom: 35px;
+    right: 121px;
+    top: 945px;
     width: 238px;
     z-index: -1;
 }
@@ -118,6 +118,8 @@ h1 {
     padding-top: 11px;
     opacity: 0;
     padding-bottom: 15px;
+    margin-left: 5px;
+    margin-right: -5px;
 }
 
 .nav-pills>li:nth-child(3) {
@@ -142,6 +144,7 @@ h1 {
     right: -262px;
     top: 0;
     height: 100%;
+    max-height: 1024px;
 }
 
 .home-left {
@@ -184,6 +187,7 @@ h1 {
     padding-left: 56px;
     line-height: 20px;
     font-size: 22px;
+    text-transform: uppercase;
 }
 
 .healthcare_resource ul {
@@ -194,12 +198,15 @@ h1 {
     list-style: none;
     font-size: 23px;
     line-height: 45px;
+    text-indent: -55px;
+    padding-left: 50px;
+
 }
 
 .healthcare_resource a,
 .healthcare_resource a:hover {
-    color: black;
     text-decoration: none;
+    color: rgb(90,95,98);
 }
 
 .healthcare_resource li:before {
@@ -240,4 +247,54 @@ h1 {
 
 #blue {
     background: url('../img/healthcare/HealthCare page_Blue Bar.png');
+}
+
+/*.b-page {
+    box-shadow: 0px 0px 30px #D2D2D2;
+}
+
+.b-page-0 {
+    box-shadow: none;
+}*/
+
+#flipbook .b-arrow-prev div,
+#flipbook .b-arrow-next div {
+    background-size: contain;
+}
+
+#flipbook .b-arrow div {
+    display: none;
+    text-indent: -9999px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 2%;
+    top: initial;
+}
+
+#flipbook .b-arrow-prev {
+    left: -30px;
+}
+
+#flipbook .b-arrow-next {
+    right: -90px;
+}
+
+#generic_caption {
+    position: absolute;
+    right: 80px;
+    display: none;
+    color: #909098;
+}
+
+#firstpage_caption {
+    position: absolute;
+    right: 520px;
+    color: #909098;
+}
+
+.fancybox-wrap {
+  position: absolute;
+  top: 100px !important;
 }

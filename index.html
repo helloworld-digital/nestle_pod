@@ -15,10 +15,10 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link href="http://fancyapps.com/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
     <link href="booklet/jquery.booklet.latest.css" type="text/css" rel="stylesheet" media="screen, projection, tv" />
 </head>
 
@@ -32,28 +32,28 @@
                 <a data-toggle="pill" href="#healthcare_resource"><img class="shadow" src="img/nav/Healthcare TAB.png"></a>
             </li>
             <li>
-                <a data-toggle="pill" href="#product_guide"><img class="shadow" src="img/nav/Product Guide TAB.png" /></a>
+                <a data-toggle="pill" id="page-1" href="#product_guide" data-page="1"><img class="shadow" src="img/nav/Product Guide TAB.png" /></a>
             </li>
             <li id="sublevel_button">
-                <a data-toggle="pill" href="#oral_supplements"><img class="shadow" src="img/nav/Oral Supplements TAB.png" /></a>
+                <a data-toggle="pill" id="page-6" data-page="6"><img class="shadow" src="img/nav/Oral Supplements TAB.png" /></a>
             </li>
             <li id="sublevel_button">
-                <a data-toggle="pill" href="#sustagen"><img class="shadow" src="img/nav/Sustagen TAB.png" /></a>
+                <a data-toggle="pill" id="page-42" data-page="42"><img class="shadow" src="img/nav/Sustagen TAB.png" /></a>
             </li>
             <li id="sublevel_button">
-                <a data-toggle="pill" href="#tube_feeds"><img class="shadow" src="img/nav/Tube Feeds TAB.png" /></a>
+                <a data-toggle="pill" id="page-70" data-page="70"><img class="shadow" src="img/nav/Tube Feeds TAB.png" /></a>
             </li>
             <li id="sublevel_button">
-                <a data-toggle="pill" href="#paediatric_allergy"><img class="shadow" src="img/nav/Paediatric Allergy TAB.png" /></a>
+                <a data-toggle="pill" id="page-94" data-page="94"><img class="shadow" src="img/nav/Paediatric Allergy TAB.png" /></a>
             </li>
             <li id="sublevel_button">
-                <a data-toggle="pill" href="#paediatric_specialised"><img class="shadow" src="img/nav/Paediatric Specialised TAB.png" /></a>
+                <a data-toggle="pill" id="page-94" data-page="94"><img class="shadow" src="img/nav/Paediatric Specialised TAB.png" /></a>
             </li>
             <li id="sublevel_button">
-                <a data-toggle="pill" href="#optifast_vlcd"><img class="shadow" src="img/nav/Optifast TAB.png" /></a>
+                <a data-toggle="pill" id="page-118" data-page="118"><img class="shadow" src="img/nav/Optifast TAB.png" /></a>
             </li>
             <li id="sublevel_button">
-                <a data-toggle="pill" href="#dsyphagia"><img class="shadow" src="img/nav/Dysphagia TAB.png" /></a>
+                <a data-toggle="pill" id="page-132" data-page="132"><img class="shadow" src="img/nav/Dysphagia TAB.png" /></a>
             </li>
         </ul>
         <div class="tab-content">
@@ -70,74 +70,266 @@
                         <h2 id="peach">ORAL SUPPLEMENTS</h2>
                         <ul>
                             <li>
-                                <a data-fancybox-type="iframe" href="pdf/example.pdf">Nestlé Nutrition Treatment Protocol</a>
+                                <a data-fancybox-type="iframe" href="pdf/Oral_Supplements/">Nestlé Nutrition Treatment Protocol</a>
                             </li>
-                            <li>Med Round Resource 2.0 A4</li>
-                            <li>Protein And The Older Adult Update</li>
-                            <li>Hospital 2 Cal Detail Aid</li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Oral_Supplements/">Med Round Resource 2.0</a>
+                            </li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Oral_Supplements/Protein And The Older Adult.pdf">Protein And The Older Adult</a>
+                            </li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Oral_Supplements/Hospital 2 Cal Detail Aid.pdf">Hospital 2 Cal Detail Aid</a>
+                            </li>
                         </ul>
-                        <h2 id="sustagen_blue">SUSTAGEN®</h2>
+                        <h2 id="sustagen_blue">SUSTAGEN<sup>®</sup></h2>
                         <ul>
-                            <li>Sustagen® Clinical Bigfoot Trade Presenter</li>
-                            <li>Sustagen® Neutral Bulk Mixing Instructions</li>
-                            <li>Sustagen® Neutral Bulk Mixing Instructions</li>
-                            <li>Sustagen® Product Range Brochure</li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Sustagen/Sustagen Clinical Bigfoot Trade Presenter.pdf">Sustagen<sup>®</sup> Clinical Bigfoot Trade Presenter</a>
+                            </li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Sustagen/Sustagen Neutral Bulk Mixing Instructions.pdf">Sustagen<sup>®</sup> Neutral Bulk Mixing Instructions</a>
+                            </li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Sustagen/Sustagen Neutral Mixing Instructions.pdf">Sustagen<sup>®</sup> Neutral Mixing Instructions</a>
+                            </li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Sustagen/Sustagen Product Range Brochure.pdf">Sustagen<sup>®</sup> Product Range Brochure</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-4">
                         <h2 id="purple">Tube Feeds</h2>
                         <ul>
-                            <li>Tube Feed Detail Aid 2016</li>
-                            <li>Medtronic Nestle HCP Brochure</li>
-                            <li>ENFit InService PPT - March 2016</li>
-                            <li>Presentation Nestle Medtronic KinCare</li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Tube_Feeds/Tube Feed Detail Aid 2016.pdf">Tube Feed Detail Aid 2016</a>
+                            </li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Tube_Feeds/Medtronic Nestle HCP Brochure.pdf">Medtronic Nestle HCP Brochure</a>
+                            </li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Tube_Feeds/ENFit InService - March 2016.pdf">ENFit InService - March 2016</a>
+                            </li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Tube_Feeds/Presentation Nestle Medtronic KinCare.pdf">Presentation Nestle Medtronic KinCare</a>
+                            </li>
                         </ul>
                         <h2 id="yellow">Paediatric</h2>
                         <ul>
-                            <li>Paed Product Range detail aid</li>
-                            <li>CMPA – Introduction of Solids</li>
-                            <li>Sad Toy Allergy range tri fold out detailer</li>
-                            <li>Paed Product Range iPad presentation</li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Paediatric/Paediatric Product Range Detail Aid.pdf">Paed Product Range detail aid</a>
+                            </li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Paediatric/">CMPA – Introduction of Solids</a>
+                            </li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Paediatric/Food Allergy Range.pdf">Paediatric Food Allergy Range</a>
+                            </li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Paediatric/Paediatric Product Range ipad Presentation.pdf">Paediatric Product Range iPad Presentation</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <h2 id="teal">Optifast® VLCD™</h2>
+                        <h2 id="teal">Optifast<sup>®</sup> VLCD<sup>™</sup></h2>
                         <ul>
-                            <li>Clinical treatment protocol</li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Optifast/Clinical Treatment Protocol.pdf">Optifast<sup>®</sup> Clinical Treatment Protocol</a>
+                            </li>
                         </ul>
                         <h2 id="green">Dysphagia</h2>
                         <ul>
-                            <li>ThickenUp Clear A5 Brochure Clinical Key Features and Benefits</li>
-                            <li>ThickenUp A4 Detail Aid</li>
-                            <li>ThickenUp Hydration Product Overview</li>
-                            <li>TUC A4 combined prep guide</li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Dysphagia/ThickenUp Clear Clinical Key Features and Benefits.pdf">ThickenUp<sup>®</sup> Clear Clinical<br/>Key Features and Benefits</a>
+                            </li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Dysphagia/ThickenUp Detail Aid.pdf">ThickenUp<sup>®</sup> A4 Detail Aid</a>
+                            </li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Dysphagia/ThickenUp Hydration Product Overview.pdf">ThickenUp<sup>®</sup> Hydration Product Overview</a>
+                            </li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Dysphagia/ThickenUp combined prep guide.pdf">ThickenUp<sup>®</sup> Combined Prep Guide</a>
+                            </li>
                         </ul>
                         <h2 id="blue">NCare</h2>
                         <ul>
-                            <li>NHS NCare Presentation</li>
-                            <li>Representative Contact Details</li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Ncare/NHS NCare Presentation.pdf">NHS NCare<sup>®</sup> Presentation</a>
+                            </li>
+                            <li>
+                                <a data-fancybox-type="iframe" href="pdf/Ncare/Representative Contact Details.pdf">Representative Contact Details</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div id="product_guide" class="tab-pane fade">
                 <div id="flipbook">
-                    <div><img src="product_guide/page1.jpg"/></div>
-                    <div><img src="product_guide/page2.jpg"/></div>
-                    <div><img src="product_guide/page3.jpg"/></div>
+                    <div><img src="product_guide/Product Guide_Page_Frontcover.png" /></div>
+                    <div><img src="product_guide/Product Guide_Page_002.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_003.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_004.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_005.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_006.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_007.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_008.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_009.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_010.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_011.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_012.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_013.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_014.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_015.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_016.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_017.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_018.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_019.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_020.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_021.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_022.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_023.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_024.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_025.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_026.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_027.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_028.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_029.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_030.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_031.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_032.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_033.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_034.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_035.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_036.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_037.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_038.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_039.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_040.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_041.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_042.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_043.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_044.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_045.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_046.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_047.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_048.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_049.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_050.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_051.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_052.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_053.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_054.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_055.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_056.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_057.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_058.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_059.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_060.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_061.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_062.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_063.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_064.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_065.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_066.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_067.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_068.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_069.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_070.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_071.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_072.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_073.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_074.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_075.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_076.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_077.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_078.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_079.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_080.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_081.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_082.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_083.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_084.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_085.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_086.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_087.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_088.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_089.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_090.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_091.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_092.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_093.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_094.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_095.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_096.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_097.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_098.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_099.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_100.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_101.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_102.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_103.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_104.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_105.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_106.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_107.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_108.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_109.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_110.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_111.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_112.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_113.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_114.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_115.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_116.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_117.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_118.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_119.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_120.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_121.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_122.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_123.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_124.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_125.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_126.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_127.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_128.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_129.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_130.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_131.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_132.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_133.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_134.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_135.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_136.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_137.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_138.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_139.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_140.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_141.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_142.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_143.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_144.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_145.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_146.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_147.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_148.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_149.jpg" /></div>
+                    <div><img src="product_guide/Product Guide_Page_Backcover.png" /></div>
                 </div>
+                <span id="firstpage_caption">Touch cover to open</span>
+                <span id="generic_caption">Click on page number to turn page</span>
             </div>
         </div>
-      
         <img class="nestle_logo" src="img/Nestle logo.png" />
         <!-- Put your page content here! -->
         <!-- jQuery -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script src="js/jquery-2.1.0.min.js"></script>
         <script>
         window.jQuery || document.write('<script src="booklet/jquery-2.1.0.min.js"><\/script>')
         </script>
         <!-- jQuery UI (optional) -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-1.10.4.min.js"></script>
         <script>
         window.jQuery.ui || document.write('<script src="booklet/jquery-ui-1.10.4.custom.min.js"><\/script>')
         </script>
@@ -146,7 +338,7 @@
         <script src="booklet/jquery.booklet.latest.min.js"></script>
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
-        <script src="http://fancyapps.com/fancybox/source/jquery.fancybox.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
         <script type="text/javascript">
         $(document).ready(function() {
             var num = $('.nav>li').length; /* or suitably high number depending on your layout */
@@ -155,18 +347,35 @@
                 height: 650,
                 closed: true,
                 autoCenter: true,
-                manual: false,
-                overlays: true,
-                hovers: true,
-                pagePadding: 0
+                pagePadding: 0,
+                arrows: true,
+                hover: false,
+                pageNumbers: false,
+                change: function(event, data) {
+                    switch (data.index) {
 
+                        case 0:
+                            $('#page-1').tab('show');
+                            $('#firstpage_caption ').show();
+                            $('#generic_caption').hide();
+                            break;
+
+                        default:
+                            $('#page-'+data.index).tab('show');
+                            $('#firstpage_caption ').hide();
+                            $('#generic_caption').show();
+                            break;
+                    }
+
+                }
             });
             $(".healthcare_resource a").fancybox({
                 openEffect: 'elastic',
                 closeEffect: 'elastic',
+                height: 824,
                 iframe: {
                     preload: false
-                }
+                },
             });
             $('.nav>li').each(function(i, item) {
                 $(item).css('z-index', num - i);
@@ -177,20 +386,28 @@
             $('img').on('dragstart', function(event) {
                 event.preventDefault();
             });
-            $('.nav a').click(function() {
+            $('.nav a').click(function(e) {
                 if ($(this).attr('href') == "#home") {
+                    $(".full").css("background", "white");
                     $('#home_button').css("opacity", "0");
                     $('li#sublevel_button').css("opacity", "0");
 
                 } else {
                     $('#home_button').css("opacity", "1");
                     if ($(this).attr('href') != "#healthcare_resource") {
+                        $(".full").css("background", "url('img/background.jpg') no-repeat center center fixed");
                         $('li#sublevel_button').css("opacity", "1");
+                        e.preventDefault();
+                        $('#flipbook').booklet("gotopage", $(this).data('page'));
                     } else {
                         $('li#sublevel_button').css("opacity", "0");
+                        $(".full").css("background", "white");
+
                     }
                 }
             })
+
+
         });
         </script>
 </body>
